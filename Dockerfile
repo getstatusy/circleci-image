@@ -12,4 +12,6 @@ RUN set -ex; \
     curl -L https://storage.googleapis.com/kubernetes-release/release/$version/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl; \
     chmod +x /usr/local/bin/kubectl; \
     \
-    curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash;
+    curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash; \
+    curl -sSL https://sdk.cloud.google.com | bash;
+
